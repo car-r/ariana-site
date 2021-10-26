@@ -2,9 +2,9 @@ import React from 'react'
 
 const Skills = () => {
     return (
-        <section className="w-full mx-auto bg-gray-100 py-20">
-        <h2 className="text-3xl text-left w-11/12 max-w-6xl mx-auto mb-4 font-semibold">Skills</h2>
-          <div className="grid grid-cols-1 gap-6 w-11/12 max-w-6xl  mx-auto lg:grid-cols-3">
+        <section className="w-full mx-auto bg-gray-100 py-32">
+        <h2 className="text-2xl md:text-3xl text-left w-11/12 max-w-6xl mx-auto mb-4 font-semibold">Skills</h2>
+          <div className="grid grid-cols-1 gap-6 w-11/12 max-w-6xl  mx-auto md:grid-cols-2 lg:grid-cols-3">
             <div className="flex flex-col bg-white text-left p-6 rounded-xl shadow-sm">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />

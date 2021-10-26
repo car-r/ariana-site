@@ -1,10 +1,15 @@
 import React from 'react'
 
-const Awards = () => {
+const Accomplishments = () => {
     return (
-        <section className="w-full mx-auto py-20">
-        <h2 className="text-3xl text-left w-11/12 max-w-6xl mx-auto mb-4 font-semibold">Awards</h2>
-            <div className="grid grid-cols-1 gap-4 w-11/12 max-w-6xl mx-auto md:grid-cols-2 lg:grid-cols-3">
+        <section className="w-full mx-auto py-32">
+        <h2 className="text-2xl md:text-3xl text-left w-11/12 max-w-6xl mx-auto mb-4 font-semibold">Accomplishments</h2>
+            <div className="grid grid-cols-1 gap-6 w-11/12 max-w-6xl mx-auto md:grid-cols-2 lg:grid-cols-3">
+                <div className="flex flex-col bg-gray-100 p-4 text-left shadow-sm rounded-lg">
+                    <h3 className="text-xl font-medium mb-0.5">Certified Insurance Counselor</h3>
+                    <p className="text-sm font-thin mb-2">July 2021</p>
+                    <p className="font-light">National Alliance for Insurance Education & Research</p>
+                </div>
                 <div className="flex flex-col bg-gray-100 p-4 text-left shadow-sm rounded-lg">
                     <h3 className="text-xl font-medium mb-0.5">2021 Class of Emerging Leaders</h3>
                     <p className="text-sm font-thin mb-2">February 2021</p>
@@ -35,4 +40,4 @@ const Awards = () => {
     )
 }
 
-export default Awards
+export default Accomplishments
