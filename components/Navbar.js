@@ -7,10 +7,22 @@ const Navbar = () => {
                     <div className="text-4xl">
                         <Link href="/">A.</Link>
                     </div>
-                    <div className="flex gap-10">
-                        <Link href="/about"><a>About</a></Link>
-                        <Link href="/resume"><a>Resume</a></Link>
-                        <Link href="/content"><a>Content</a></Link>
+                    <div className="flex gap-4">
+                        <Link href="/about">
+                            <a className="py-1 px-4 rounded-2xl hover:bg-gray-50 hover:-translate-y-0.5 transition-all ease-in-out">
+                                About
+                            </a>
+                        </Link>
+                        <Link href="/resume">
+                            <a className="py-1 px-4 rounded-2xl hover:bg-gray-50 hover:-translate-y-0.5 transition-all ease-in-out">
+                                Resume
+                            </a>
+                        </Link>
+                        <Link href="/content">
+                            <a className="py-1 px-4 rounded-2xl hover:bg-gray-50 hover:-translate-y-0.5 transition-all ease-in-out">
+                                Content
+                            </a>
+                        </Link>
                     </div>
                     
                 </div>

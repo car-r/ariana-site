@@ -16,7 +16,7 @@ export default function Home() {
       <main className="flex flex-col w-full flex-1 text-center bg-white ">
         <div className="items-center max-w-6xl mx-auto lg:flex lg:w-11/12 justify-around my-20 ">
           <div className="text-center flex flex-col mb-8 lg:mr-10 lg:mb-0 lg:text-left justify-center">
-            <h1 className="text-3xl lg:text-6xl font-bold mb-4">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4">
               Hi, I'm Ariana.
             </h1>
             <h3 className="text-xl lg:text-2xl mb-2 lg:mb-0">
