@@ -1,9 +1,26 @@
 import Link from 'next/link'
+import { MenuIcon } from '@heroicons/react/solid'
+import { XIcon } from '@heroicons/react/solid'
 
-const Navbar = () => {
+const Navbar = ({toggle, isOpen}) => {
     return (
-        <nav className="py-4 border-b-2 border-gray-100">
-                <div className="flex items-center mx-auto max-w-5xl w-11/12 justify-between">
+        <>
+        <nav className="flex">
+            <div className="flex w-full justify-end md:hidden">
+            { isOpen ? 
+                <XIcon 
+                    className="h-10 w-10 my-2 mr-2 justify-end cursor-pointer md:hidden"
+                    onClick={toggle}
+                /> : 
+                <MenuIcon 
+                    className="h-10 w-10 my-2 mr-2 justify-end cursor-pointer md:hidden"
+                    onClick={toggle}
+            />
+            }
+            
+            </div>
+            <div className="w-full py-4 border-b-2 border-gray-100 hidden md:block border-2">
+                <div className="flex items-center mx-auto max-w-5xl w-11/12 justify-between ">
                     <div className="text-4xl">
                         <Link href="/">A.</Link>
                     </div>
@@ -24,9 +41,10 @@ const Navbar = () => {
                             </a>
                         </Link>
                     </div>
-                    
                 </div>
+            </div>
         </nav>
+        </>
     )
 }
 
