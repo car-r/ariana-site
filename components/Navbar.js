@@ -9,17 +9,17 @@ const Navbar = ({toggle, isOpen}) => {
             <div className="flex w-full justify-end md:hidden">
             { isOpen ? 
                 <XIcon 
-                    className="h-10 w-10 my-2 mr-2 justify-end cursor-pointer md:hidden"
+                    className="h-10 w-10 mt-2 mr-2 justify-end cursor-pointer md:hidden"
                     onClick={toggle}
                 /> : 
                 <MenuIcon 
-                    className="h-10 w-10 my-2 mr-2 justify-end cursor-pointer md:hidden"
+                    className="h-10 w-10 mt-2 mr-2 justify-end cursor-pointer md:hidden"
                     onClick={toggle}
             />
             }
             
             </div>
-            <div className="w-full py-4 border-b-2 border-gray-100 hidden md:block border-2">
+            <div className="w-full py-4 border-b-2 border-gray-100 hidden md:block ">
                 <div className="flex items-center mx-auto max-w-5xl w-11/12 justify-between ">
                     <div className="text-4xl">
                         <Link href="/">A.</Link>
