@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Accomplishments from '../components/Accomplishments'
 import HeroSection from '../components/HeroSection'
+import Content from '../components/Content'
+import Content2 from '../components/Content2'
 import Skills from '../components/Skills'
 
 
@@ -17,6 +19,7 @@ export default function Home() {
         <HeroSection />
         <Skills />
         <Accomplishments />
+        <Content />
         
       </main>
 
