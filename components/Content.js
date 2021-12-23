@@ -29,6 +29,12 @@ const Content = () => {
         threeReasons
     ]
 
+    const urls = [
+        "'https://www.youtube.com/watch?v=hN0x3EGZo5c'",
+        "'https://www.youtube.com/watch?v=VD-qN07sSyk'",
+        "'https://www.youtube.com/watch?v=NINSBaXhVD8'"
+    ]
+
     const handlePrev = () => {
         setTransR(true)
         setTransL(false)
@@ -66,7 +72,7 @@ const Content = () => {
                     onClick={handlePrev}
                 />
                     <div className="flex relative overflow-hidden w-11/12 mx-auto max-w-5xl">
-                        <a href="" className="">
+                        <a href={urls[index]} className="">
                             <Image className={` absolute object-contain z-20 rounded-xl }`} src={images[index]} alt=""/>
                         </a>
                         {/* <Image className={` absolute object-contain z-0 p-4 rounded-xl ${transL ? 'animate-slideR' : ''}`} src={images[index1]} alt=""/> */}

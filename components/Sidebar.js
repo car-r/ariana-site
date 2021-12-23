@@ -30,7 +30,7 @@ const Sidebar = ({toggle, isOpen}) => {
                     </Link>
                 </div>
             </nav>
-            </div>
+        </div>
   
     )
 }

@@ -34,13 +34,13 @@ const content = () => {
                             />
                         </a>
                         <div className="mt-2 flex flex-col lg:pl-7 lg:mt-4">
-                            <h3 className="text-md font-semibold md:text-lg">Benefits of Placing Business with an Admitted Carrier</h3>
+                            <h3 className="text-md font-semibold md:text-lg">Benefits of Placing Business with an Admitted Carrier.</h3>
                             <p className="font-thin text-sm md:text-base lg:text-base mb-2">May 1, 2021</p>
                             <p className="font-light text-sm md:text-base lg:text-base">Learn the benefits of working with Admitted carriers for you and your customers!</p>
                         </div>
                     </div>
                     <div className="lg:grid grid-cols-2">
-                        <a href="https://www.youtube.com/watch?v=VD-qN07sSyk"
+                        <a href="https://www.youtube.com/watch?v=NINSBaXhVD8"
                             className="cursor-pointer  hover:drop-shadow-lg"
                         >
                             <Image 

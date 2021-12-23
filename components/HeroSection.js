@@ -15,7 +15,7 @@ const HeroSection = () => {
                 I'm here to build long lasting relationships with clients.
                 </h2>
                 <a href="https://www.linkedin.com/in/arianarichter24" 
-                className="border-2 border-gray-400 mb-2 py-3 w-10/12 mx-auto lg:w-5/12 lg:mx-0 lg:mb-0 text-white  bg-gray-400 rounded-lg hover:bg-gray-50 hover:text-black  transition ease-in-out text-center
+                className="border-2 border-gray-400 mb-2 py-3 w-10/12 mx-auto lg:w-5/12 lg:mx-0 lg:mb-0 text-white  bg-gray-400 rounded-lg hover:bg-gray-50 hover:text-black  transition ease-in duration-200 text-center
                 ">
                 <button className="font-bold tracking-wider">Connect with me</button>
                 </a>
