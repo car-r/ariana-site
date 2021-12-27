@@ -12,22 +12,22 @@ const Skills = () => {
               <ClipboardListIcon 
                 className="h-8 w-8 mb-1"
               />
-              <h3 className="text-2xl mb-2">Sales</h3>
-              <p className="text-base font-thin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit dignissim sodales ut eu sem integer vitae justo.</p>
+              <h3 className="text-2xl mb-2 font-medium">Sales</h3>
+              <p className="text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit dignissim sodales ut eu sem integer vitae justo.</p>
             </div>
             <div className="flex flex-col bg-white text-left p-6 rounded-xl shadow-sm">
               <BriefcaseIcon 
                 className="h-8 w-8 mb-1"
               />
-              <h3 className="text-2xl mb-2">Business Development</h3>
-              <p className="text-base font-thin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit dignissim sodales ut eu sem integer vitae justo.</p>
+              <h3 className="text-2xl mb-2 font-medium">Business Development</h3>
+              <p className="text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit dignissim sodales ut eu sem integer vitae justo.</p>
             </div>
             <div className="flex flex-col bg-white text-left p-6 rounded-xl shadow-sm">
               <VideoCameraIcon 
                 className="h-8 w-8 mb-1"
               />
-              <h3 className="text-2xl mb-2">Marketing</h3>
-              <p className="text-base font-thin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit dignissim sodales ut eu sem integer vitae justo.</p>
+              <h3 className="text-2xl mb-2 font-medium">Marketing</h3>
+              <p className="text-base font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit dignissim sodales ut eu sem integer vitae justo.</p>
             </div>
           </div>
         </section>
