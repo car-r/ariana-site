@@ -35,9 +35,9 @@ const Navbar = ({toggle, isOpen}) => {
                                 Resume
                             </a>
                         </Link>
-                        <Link href="/content">
+                        <Link href="/posts">
                             <a className="py-1 px-4 rounded-2xl hover:bg-gray-50 hover:-translate-y-0.5 transition-all ease-in-out">
-                                Content
+                                Posts
                             </a>
                         </Link>
                     </div>

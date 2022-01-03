@@ -4,9 +4,20 @@ import HeroSection from '../components/HeroSection'
 import Content from '../components/Content'
 import Content2 from '../components/Content2'
 import Skills from '../components/Skills'
+import { getContentData } from '../lib/data'
+
+export const getStaticProps = async () => {
+  const contentData = await getContentData()
+  console.log(contentData)
+  return {
+    props: {
+      contentData,
+    }
+  }
+}
 
 
-export default function Home() {
+export default function Home({contentData}) {
   return (
     <div className="flex flex-col w-full items-center min-h-screen bg-gray-100">
       <Head>
@@ -19,7 +30,7 @@ export default function Home() {
         <HeroSection />
         <Skills />
         <Accomplishments />
-        <Content />
+        <Content contentData={contentData}/>
         
       </main>
 

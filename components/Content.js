@@ -6,7 +6,7 @@ import admittedCarrier from '../public/admitted-carrier.png'
 import threeReasons from '../public/three-reasons.png'
 
 
-const Content = () => {
+const Content = ({contentData}) => {
     const [index, setIndex] = useState(0)
     const [index1, setIndex1] = useState(1)
 
@@ -43,13 +43,13 @@ const Content = () => {
         const nextIndex1 = index1 - 1
 
         if (nextIndex < 0) {
-            setIndex(images.length - 1)
+            setIndex(contentData.posts.length - 1)
         } else {
             setIndex(nextIndex)
         }
 
         if(nextIndex1 < 0) {
-            setIndex1(images.length - 1)
+            setIndex1(contentData.posts.length - 1)
         } else {
             setIndex1(nextIndex1)
         }
@@ -58,10 +58,10 @@ const Content = () => {
     const handleNext = () => {
         setTransL(true)
         setTransR(false)
-        setIndex((index + 1) % images.length)
-        setIndex1((index1 + 1) % images.length)
+        setIndex((index + 1) % contentData.posts.length)
+        setIndex1((index1 + 1) % contentData.posts.length)
     }
-
+    console.log(contentData.posts)
     return (
         
         <div className="w-full mx-auto bg-gray-100 py-32 flex flex-col">
@@ -72,8 +72,11 @@ const Content = () => {
                     onClick={handlePrev}
                 />
                     <div className="flex relative overflow-hidden w-11/12 mx-auto max-w-5xl">
-                        <a href={urls[index]} className="">
+                        {/* <a href={urls[index]} className="">
                             <Image className={` absolute object-contain z-20 rounded-xl }`} src={images[index]} alt=""/>
+                        </a> */}
+                        <a href={contentData.posts[index].youTubeLink} className="">
+                            <Image className='rounded-xl' src={contentData.posts[index].featureImage.url} alt={contentData.posts[index].title} width='1080' height='600'/>
                         </a>
                         {/* <Image className={` absolute object-contain z-0 p-4 rounded-xl ${transL ? 'animate-slideR' : ''}`} src={images[index1]} alt=""/> */}
                     </div>
