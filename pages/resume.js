@@ -2,8 +2,28 @@ import React from 'react'
 
 const resume = () => {
     return (
-        <div>
-            <h1>resume</h1>
+        <div className='w-11/12 max-w-5xl mx-auto mt-10'>
+            <h1 className='text-5xl md:text-6xl font-bold mb-12'>EXPERIENCE</h1>
+            <div className='border-l-2 border-gray-900 pl-4 mb-16'>
+                <p className='font-light '>2021 - now</p>
+                <h3 className='text-2xl md:text-3xl font-semibold my-2'>Munich Re Specialty Insurance</h3>
+                <h4 className='text-lg md:text-xl'>Broker Relationship Leader</h4>
+            </div>
+            <div className='border-l-2 border-gray-900 pl-4 mb-16'>
+                <p className='font-light '>2018 - 2021</p>
+                <h3 className='text-2xl md:text-3xl font-semibold my-2'>American Modern Insurance Group</h3>
+                <h4 className='text-lg md:text-xl'>Senior Territory Sales Manager</h4>
+            </div>
+            <div className='border-l-2 border-gray-900 pl-4 mb-16'>
+                <p className='font-light '>2014 - 2018</p>
+                <h3 className='text-2xl md:text-3xl font-semibold my-2'>Munich Re</h3>
+                <h4 className='text-lg md:text-xl'>HR Business Partner</h4>
+            </div>
+            <div className='border-l-2 border-gray-900 pl-4 mb-16'>
+                <p className='font-light '>2011 - 2014</p>
+                <h3 className='text-2xl md:text-3xl font-semibold my-2'>Munich Re</h3>
+                <h4 className='text-lg md:text-xl'>HR Service Center</h4>
+            </div>
         </div>
     )
 }

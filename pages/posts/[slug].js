@@ -1,6 +1,6 @@
 import React from 'react'
 import { GraphQLClient } from 'graphql-request';
-import { getPostData, getPostSlugs } from '../../lib/data';
+import { getPostData, getPostSlugs, getRecentPosts } from '../../lib/data';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -35,6 +35,7 @@ export async function getStaticProps({ params }) {
     return {
         props: {
             post,
+            
         }
     }
 }
@@ -63,12 +64,13 @@ const PostDetails = ({ post }) => {
     // const markdown = post.content.markdown
     // const html = post.content.html
     // console.log(raw[0].children[0].text)
-    console.log(raw)
+    console.log(raw) 
+    
 
     const getContentFragment = (index, text, obj, type) => {
         let modifiedText = text;
         console.log(text)
-    
+
         if (obj) {
           if (obj.bold) {
             modifiedText = (<b key={index}>{text}</b>);

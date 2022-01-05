@@ -3,31 +3,34 @@ import { GraphQLClient } from 'graphql-request';
 import Image from 'next/image';
 import Link from 'next/link';
 import PostCard from '../../components/PostCard';
+import { getPosts } from '../../lib/data';
 
 export async function getStaticProps() {
-    const graphcms = new GraphQLClient('https://api-us-west-2.graphcms.com/v2/ckxpk6xgz05zt01z6gtuqhy32/master')
+    // Moved below to data.js file to house graphQL requests
+    // const graphcms = new GraphQLClient('https://api-us-west-2.graphcms.com/v2/ckxpk6xgz05zt01z6gtuqhy32/master')
 
+    // const { posts } = await graphcms.request(
+    //     `
+    //         {
+    //             posts(orderBy: date_DESC) {
+    //                 title
+    //                 slug
+    //                 date
+    //                 description
+    //                 featureImage {
+    //                     url
+    //                 }
+    //                 youTubeLink
+    //             }
+    //         }
+    //     `
+    // )
 
-    const { posts } = await graphcms.request(
-        `
-            {
-                posts(orderBy: date_DESC) {
-                    title
-                    slug
-                    date
-                    description
-                    featureImage {
-                        url
-                    }
-                    youTubeLink
-                }
-            }
-        `
-    )
-
+    const posts = await getPosts()
     return {
         props: {
             posts,
+            
         },
     }
 
