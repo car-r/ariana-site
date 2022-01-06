@@ -61,7 +61,7 @@ export async function getStaticPaths() {
 
 const PostDetails = ({ post }) => {
     const raw = post.content.raw.children
-    // const markdown = post.content.markdown
+    const markdown = post.content.markdown
     // const html = post.content.html
     // console.log(raw[0].children[0].text)
     console.log(raw) 
@@ -101,13 +101,13 @@ const PostDetails = ({ post }) => {
             case 'code-block':
                 return <code key={index} className="text-md mb-8 bg-gray-300  bg-opacity-50 rounded-lg p-4 border-2 border-gray-300">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</code>
             case 'bulleted-list':
-                return <li key={index}>{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</li>
+                return <ul key={index}>{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</ul>
             case 'list-item-child':
                 return <li key={index}>{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</li>
             case 'list-item':
                 return <li key={index}>{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</li>
             case 'link':
-                return <a key={index} className='text-md'>{modifiedText.map((item, i) => <React.Fragment key={i}>{item[0].text}</React.Fragment>)}</a>
+                return <a key={index} className='text-md'>{modifiedText.map((item, i) => <React.Fragment key={i}>{item[0]}</React.Fragment>)}</a>
             case 'image':
                 return (
                     <img
@@ -141,6 +141,7 @@ const PostDetails = ({ post }) => {
                 const children = typeObj.children.map((item, itemIndex) => getContentFragment(itemIndex, item.text, item))
                 return getContentFragment(index, children, typeObj, typeObj.type)
             })}
+            {/* {markdown} */}
         </div>
     )
 }
