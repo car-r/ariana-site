@@ -3,12 +3,13 @@ import { GraphQLClient } from 'graphql-request';
 import { getPostData, getPostSlugs, getRecentPosts } from '../../lib/data';
 import Image from 'next/image';
 import Link from 'next/link';
+import { RichText } from '@graphcms/rich-text-react-renderer';
 
 
 const graphcms = new GraphQLClient('https://api-us-west-2.graphcms.com/v2/ckxpk6xgz05zt01z6gtuqhy32/master')
 
 export async function getStaticProps({ params }) {
-    console.log(params)
+    // console.log(params)
     const { post } = await graphcms.request(
         `
             query PostPageQuery($slug: String!) {
@@ -64,8 +65,8 @@ const PostDetails = ({ post }) => {
     const markdown = post.content.markdown
     // const html = post.content.html
     // console.log(raw[0].children[0].text)
-    console.log(raw) 
-    
+    // console.log(raw) 
+    console.log(post)
 
     const getContentFragment = (index, text, obj, type) => {
         let modifiedText = text;
@@ -142,6 +143,21 @@ const PostDetails = ({ post }) => {
                 return getContentFragment(index, children, typeObj, typeObj.type)
             })}
             {/* {markdown} */}
+            <RichText 
+                content={post.content.raw}
+                renderers={{
+                    p: ({ children }) => <p className='mb-4'>{children}</p>,
+                    h3: ({ children }) => <h3 className="text-xl font-semibold mb-4">{children}</h3>,
+                    h4: ({ children }) => <h4 className="text-md font-semibold mb-4">{children}</h4>,
+                    bold: ({children}) => <b className='font-semibold'>{children}</b>,
+                    underline: ({ children }) => <u>{children}</u>, 
+                    ul: ({ children }) => <ul className='py-6'>{children}</ul>,
+                    li: ({ children }) => <li className='border-2 border-blue-300 flex items-center'><span className='text-3xl border-2 border-red-300 pb-1 pr-1'>•</span>{children}</li>,
+                    a: ({ children, href }) => <a href={href} className='text-blue-500 hover:underline'>{children}</a>,
+                    blockquote: ({ children }) => <blockquote className="italic border-l-4 border-gray-300 pl-6 mb-8 py-4 text-lg">{children}</blockquote>,
+                    code_block: ({ children }) => <code className="text-md mb-8 bg-gray-300  bg-opacity-50 rounded-lg p-4 border-2 border-gray-300">{children}</code>
+                }}
+            />
         </div>
     )
 }
