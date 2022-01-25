@@ -62,10 +62,7 @@ export async function getStaticPaths() {
 
 const PostDetails = ({ post }) => {
     const raw = post.content.raw.children
-    const markdown = post.content.markdown
-    // const html = post.content.html
-    // console.log(raw[0].children[0].text)
-    // console.log(raw) 
+
     console.log(post)
 
     // const getContentFragment = (index, text, obj, type) => {
@@ -137,18 +134,17 @@ const PostDetails = ({ post }) => {
                 />
             </a>
             
-            {/* <div dangerouslySetInnerHTML={{ __html: html}} /> */}
             {/* {post.content.raw.children.map((typeObj, index) => {
                 const children = typeObj.children.map((item, itemIndex) => getContentFragment(itemIndex, item.text, item))
                 return getContentFragment(index, children, typeObj, typeObj.type)
             })} */}
-            {/* {markdown} */}
+
             <RichText 
                 content={post.content.raw}
                 renderers={{
                     p: ({ children }) => <p className='mb-4'>{children}</p>,
                     h3: ({ children }) => <h3 className="text-xl font-semibold mb-4">{children}</h3>,
-                    h4: ({ children }) => <h4 className="text-md font-semibold mb-4">{children}</h4>,
+                    h4: ({ children }) => <h4 className="text-lg font-semibold mb-4">{children}</h4>,
                     bold: ({children}) => <b className='font-semibold'>{children}</b>,
                     italic: ({children}) => <em className=''>{children}</em>,
                     underline: ({ children }) => <u className=''>{children}</u>, 
