@@ -3,7 +3,7 @@ import React from 'react'
 const resume = () => {
     return (
         <div className='w-11/12 max-w-5xl mx-auto mt-14'>
-            <h2 className='text-5xl md:text-6xl font-bold mb-12'>EXPERIENCE</h2>
+            <h2 className='text-4xl sm:text-6xl font-bold mb-12'>EXPERIENCE</h2>
             <div className='border-l-2 border-gray-900 pl-4 mb-16'>
                 <p className='font-light '>2021 - now</p>
                 <h3 className='text-2xl md:text-3xl font-semibold my-2'>Munich Re Specialty Insurance</h3>

@@ -9,10 +9,10 @@ const HeroSection = () => {
                 Hi, I'm Ariana.
                 </h1>
                 <h3 className="text-xl lg:text-2xl mb-2 lg:mb-0">
-                Business development and sales professional.
+                Business development and sales professional
                 </h3>
                 <h2 className="lg-text-lg font-thin mb-4">
-                I'm here to build long lasting relationships with clients.
+                I'm here to build long lasting relationships with clients
                 </h2>
                 <a href="https://www.linkedin.com/in/arianarichter24" 
                 className="border-2 border-gray-400 mb-2 py-3 w-10/12 mx-auto lg:w-5/12 lg:mx-0 lg:mb-0 hover:text-white  hover:bg-gray-400 rounded-lg bg-gray-50 text-black  transition ease-in duration-200 text-center
