@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const PostCard = ({ title, date, description, featureImage, slug, youTubeLink }) => {
     return (
-        <div className="lg:grid grid-cols-2 pb-10 mb-14 border-b-2 border-gray-200">
+        <div className="lg:grid grid-cols-2 pb-10 mb-14 border-b-2 border-gray-200 last:border-b-0">
             <a href={youTubeLink}
                 className="cursor-pointer  hover:drop-shadow-lg"
             >

@@ -6,7 +6,7 @@ const About = () => {
     return (
         <div className="flex flex-col w-11/12 mx-auto justify-center items-center mt-16 max-w-3xl">
             <Image src={brl} className="rounded-lg"/>
-            <div className="flex flex-col w-full">
+            <div className="flex flex-col w-full mb-14">
                 <h1 className="text-3xl my-8 md:text-4xl ">Hi. I'm Ariana Richter</h1>
                 <p className="mb-4">
                     I joined Munich Re in 2010 and have held various roles across three different entities. My career
