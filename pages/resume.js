@@ -25,7 +25,7 @@ const resume = () => {
                 <h4 className='text-lg md:text-xl'>HR Service Center</h4>
             </div>
             <div>
-                <h2 className='text-5xl md:text-6xl font-bold mb-12 mt-28'>EDUCATION</h2>
+                <h2 className='text-4xl sm:text-6xl font-bold mb-12 mt-28'>EDUCATION</h2>
                 <div className='border-l-2 border-gray-900 pl-4 mb-16'>
                     <h3 className='text-2xl md:text-3xl font-semibold my-2'>Rutgers University</h3>
                     <h4 className='text-lg md:text-xl'>Masters in Human Resources</h4>
