@@ -23,9 +23,9 @@ const Sidebar = ({toggle, isOpen}) => {
                             Resume
                         </a>
                     </Link>
-                    <Link href="/content">
+                    <Link href="/posts">
                         <a className="h-10 px-4 flex items-center text-xl rounded-lg hover:bg-gray-100 hover:-translate-y-0.5 transition-all ease-in-out">
-                            Content
+                            Posts
                         </a>
                     </Link>
                 </div>
